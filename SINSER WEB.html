@@ -1,0 +1,199 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINSER | Premium Electronics</title>
+    <style>
+        /* Base Styles */
+        :root {
+            --primary-red: #d32f2f;
+            --pure-white: #ffffff;
+            --light-gray: #f4f4f4;
+            --dark-text: #212121;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray);
+            color: var(--dark-text);
+        }
+
+        /* Navigation */
+        header {
+            background-color: var(--pure-white);
+            border-bottom: 3px solid var(--primary-red);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-red);
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--dark-text);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-red);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--primary-red);
+            color: var(--pure-white);
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        /* Product Grid */
+        .container {
+            padding: 40px 5%;
+        }
+
+        .section-title {
+            border-left: 5px solid var(--primary-red);
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--pure-white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .card h3 {
+            margin: 15px 0 5px;
+        }
+
+        .price {
+            color: var(--primary-red);
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background-color: var(--primary-red);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #b71c1c;
+        }
+
+        footer {
+            background: #212121;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">SINSER</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Laptops</a>
+            <a href="#">Phones</a>
+            <a href="#">Audio</a>
+            <a href="#">Cart (0)</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Future Tech, Today.</h1>
+        <p>Explore the exclusive collection at SINSER.</p>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        
+        <div class="product-grid">
+            <div class="card">
+                <img src=""C:\Users\shalu\Downloads\gq-mobiles-honor-x5b-smartphone-smart-mobile-phone-ocean-blue.png"" alt="Phone">
+                <h3>Sinser Pro Phone</h3>
+                <span class="price">$99.00</span>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Laptop" alt="Laptop">
+                <h3>UltraBook X</h3>
+                <span class="price">$1,299.00</span>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Headphones" alt="Audio">
+                <h3>Noise Cancel Pro</h3>
+                <span class="price">$249.00</span>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Smartwatch" alt="Watch">
+                <h3>Sinser Watch S</h3>
+                <span class="price">$199.00</span>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 SINSER Electronics. All rights reserved.
+    </footer>
+
+</body>
+</html>
